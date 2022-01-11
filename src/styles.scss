@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: rgb(240,255,217);
+    background: radial-gradient(circle, rgba(240,255,217,1) 0%, rgba(2,8,11,0.3617822128851541) 100%);
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border-radius: 5px;
+}
+  

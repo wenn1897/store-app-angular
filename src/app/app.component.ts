@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'store-app-angular';
+
+  @Output() productClicked: EventEmitter<any> = new EventEmitter();
+
+  viewCart() {
+    console.log('Viendo el carrito de compras');
+    //  this.productClicked.emit(this.product.id);
+  }
 }

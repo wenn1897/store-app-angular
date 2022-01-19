@@ -1,14 +1,10 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import {Product} from './product.model';
+import { Injectable } from '@angular/core';
+import {Product } from '../components/product/product.model';
 
-@Component({
-  selector: 'app-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.scss']
+@Injectable({
+  providedIn: 'root'
 })
-export class ProductComponent implements OnInit {
-
-  @Output() productClicked: EventEmitter<any>; 
+export class ProductsService {
 
   products: Product[] = [
     {
@@ -92,18 +88,15 @@ export class ProductComponent implements OnInit {
       }
     }
   ]
-  
-  constructor() { 
-    
+
+  constructor() { }
+
+  getAllProduct(){
+    return this.products;
   }
 
-  ngOnInit(): void {
-  }
-
-  addCart() {
-    console.log('añadido al carrito, producto');
-    //this.productClicked.emit(this.products);
-    //  this.productClicked.emit(this.product.id);
+  getProduct(id:string){
+    return this.products.find( item => id === item.id);
   }
 
 }

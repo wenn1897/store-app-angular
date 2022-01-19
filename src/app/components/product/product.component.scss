@@ -13,11 +13,7 @@ li{
     height:auto;
 }
 
-.product-container{
-    position: relative;
-    top:10vh;
-    min-width: 10rem;
-}
+
 
 .product-grid {
     display: grid;
@@ -80,6 +76,10 @@ li{
     width:3rem;
     height: 2rem;
     background:orangered;
+}
+
+ul{
+    padding-left:0;
 }
 
 

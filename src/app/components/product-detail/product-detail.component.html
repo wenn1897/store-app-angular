@@ -1,0 +1,22 @@
+<div class="product-detail-container">
+    <div class="image-product">
+        <picture>
+            <img [src]="product.image" alt="Imagen del producto seleccionado">
+        </picture>
+    </div>
+    <div class="description-product">
+       <ul>
+           <li>
+               <span>Nombre:</span> {{ product.title}}</li>
+           <li>
+               <span>Precio:</span> {{product.price | currency}}</li>
+           <li>
+               <span>Colores disponibles:</span> {{product.description.color}}</li>
+           <li>
+               <span>Tallas disponibles:</span> {{product.description.talla}}</li>
+       </ul>
+       <button>Comprar</button>
+       <button class="btn btn-return" routerLink='/products'>Volver</button>
+    </div>    
+</div>
+

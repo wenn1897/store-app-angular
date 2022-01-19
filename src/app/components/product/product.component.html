@@ -5,18 +5,18 @@
                 <span class="product-name">{{product.title | uppercase}}</span>
             </div>
             <div class="div-product-image">
-                <img [src]="product.image" alt="">
+                <img [src]="product.image" alt="Imagen del producto">
             </div>
             <div class="div-product-description">
                 <p class="product-descripction">
-                        <span class="">Color: {{product.description.color}}</span>
-                        <br>
-                        <span class="">Talla: {{product.description.talla}}</span>
+                    <a [routerLink]="['/products', product.id]">Ver detalle</a>
                 </p>
             </div>
             <div class="div-product-price">
-                <span>{{product.price}}</span>
-                <button  (click)="addCart()" class="btn btn-primary"> <i class="fa fa-shopping-cart"></i> </button>
+                <span>{{product.price | currency}}</span>
+                <button  (click)="addCart()" class="btn btn-primary">
+                    <i class="fa fa-shopping-cart"></i> 
+                </button>
             </div>
             
         </li>

@@ -1,1 +1,7 @@
-<p>banner works!</p>
+<div class="swiper-container m-5">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let image of images">
+            <img [src]="image.ruta" alt="Slide-banner" class="">
+        </div>
+    </div>
+</div>

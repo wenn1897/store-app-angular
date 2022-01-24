@@ -1,0 +1,38 @@
+.div-footer{
+    display: inline-flex;
+    background-color: rgb(139, 136, 136);
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+.div-footer div{
+    width: 33.3%;
+}
+
+i{
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+span{
+    margin-left:1rem;
+    font-size: medium;
+}
+
+@media (max-width: 600px){
+    .div-footer{
+        display: inline-block;
+        background-color: rgb(139, 136, 136);
+        width: 100%;
+        margin: 0;
+        padding: 1.5rem;
+    } 
+
+    .div-footer div{
+        margin-bottom: 1rem;
+    }
+}

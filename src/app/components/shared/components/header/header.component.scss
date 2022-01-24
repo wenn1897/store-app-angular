@@ -1,0 +1,11 @@
+nav{
+    display: inline-flex;
+    position: absolute;
+    right: 1rem;
+    //top: 1rem;
+}
+
+nav a::before{
+    background-color: #ffff;
+    color: #000;
+}

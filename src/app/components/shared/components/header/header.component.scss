@@ -2,10 +2,15 @@ nav{
     display: inline-flex;
     position: absolute;
     right: 1rem;
-    //top: 1rem;
 }
 
 nav a::before{
     background-color: #ffff;
     color: #000;
+}
+
+.cart-btn{
+    margin-left:0.6rem;
+    display:flex;
+    justify-content: center;
 }

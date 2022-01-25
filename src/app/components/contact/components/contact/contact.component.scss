@@ -1,0 +1,49 @@
+
+.image-bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.div-1{
+    position: relative;
+    z-index: 0;
+}
+
+.div-2{
+    position: absolute;
+    bottom: 5rem;
+    left:7rem;
+    z-index: 1;
+    background-color:rgba(207, 197, 197, 0.178);
+    width: 26rem;
+    padding: 2rem 0 ;
+    display: flex;
+    justify-content: left;
+    padding-left:3rem;
+    border-radius: 4px;
+}
+
+.div-form{
+    margin:  1rem 0;
+    min-width: 20rem;
+}
+
+.div-form-radio input{
+    height:1rem;
+}
+
+label{
+    color: #fff;
+}
+
+input{
+    background-color:rgb(187, 171, 171);
+    height:2rem;
+    min-width: 20rem;
+}
+
+h2{
+    color:rgb(175, 197, 216)
+}
